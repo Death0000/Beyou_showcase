@@ -1,7 +1,7 @@
 "use client";
 import { TimelineContent } from "@/components/ui/timeline-animation";
 import { VerticalCutReveal } from "@/components/ui/vertical-cut-reveal";
-import { ArrowRight, Maximize2, X } from "lucide-react";
+import { ArrowRight, Maximize2, X, Linkedin, Mail } from "lucide-react";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import aboutProfile from "@/Assets/about-profile.jpg";
@@ -16,6 +16,19 @@ interface ImageLightboxState {
   alt: string;
   title: string;
   subtitle: string;
+}
+
+function BehanceIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-4.357 0-6.625-2.909-6.625-6.784 0-4.317 2.768-6.95 6.438-6.95 3.978 0 5.827 2.753 5.488 6.734h-8.775c.078 1.944 1.343 3.411 3.511 3.411 1.488 0 2.47-.688 2.871-1.685l2.193 1.274zm-3.08-4.321c-.053-1.61-1.127-2.483-2.492-2.483-1.579 0-2.528 1.026-2.658 2.483h5.15zM8.841 12.355c.957-.492 1.549-1.373 1.549-2.571 0-2.654-2.026-3.784-4.839-3.784h-5.551v14h5.795c3.08 0 5.254-1.393 5.254-4.184 0-1.892-1.025-3.003-2.208-3.461zm-5.698-3.955h2.179c1.472 0 2.274.617 2.274 1.738 0 1.084-.793 1.748-2.274 1.748h-2.179v-3.486zm2.443 9.2h-2.443v-3.791h2.443c1.644 0 2.508.736 2.508 1.885 0 1.206-.884 1.906-2.508 1.906z" />
+    </svg>
+  );
 }
 
 export default function AboutSection3({ setActivePage }: AboutSectionProps) {
@@ -70,11 +83,26 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
             >
               A bit about me
             </TimelineContent>
-            <div className="flex gap-3">
+            <div className="flex gap-2 sm:gap-2.5">
               {[
-                { href: "https://www.linkedin.com/in/sahil-khan-p/", src: "https://pro-section.ui-layouts.com/linkedin.svg", alt: "LinkedIn", key: 0 },
-                { href: "https://www.behance.net/psahilkhan", src: "https://pro-section.ui-layouts.com/behance.svg", alt: "Behance", key: 1 },
-                { href: "mailto:kpatansahil@gmail.com", src: "https://pro-section.ui-layouts.com/mail.svg", alt: "Email", key: 2 },
+                { 
+                  href: "https://www.linkedin.com/in/sahil-khan-p/", 
+                  icon: <Linkedin className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-zinc-300 group-hover:text-white" />, 
+                  label: "LinkedIn Profile (sahil-khan-p)", 
+                  key: 0 
+                },
+                { 
+                  href: "https://www.behance.net/psahilkhan", 
+                  icon: <BehanceIcon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-zinc-300 group-hover:text-white" />, 
+                  label: "Behance Portfolio (psahilkhan)", 
+                  key: 1 
+                },
+                { 
+                  href: "mailto:kpatansahil@gmail.com", 
+                  icon: <Mail className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-zinc-300 group-hover:text-white" />, 
+                  label: "Send Email (kpatansahil@gmail.com)", 
+                  key: 2 
+                },
               ].map((social, idx) => (
                 <TimelineContent
                   key={social.key}
@@ -83,11 +111,13 @@ export default function AboutSection3({ setActivePage }: AboutSectionProps) {
                   timelineRef={heroRef}
                   customVariants={revealVariants}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="md:w-8 md:h-8 w-6 h-6 border border-zinc-800 bg-zinc-900/40 hover:bg-zinc-800/80 hover:border-zinc-700 rounded-lg flex items-center justify-center cursor-pointer transition-colors duration-300"
+                  target={social.href.startsWith("mailto:") ? undefined : "_blank"}
+                  rel={social.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                  title={social.label}
+                  aria-label={social.label}
+                  className="w-8 h-8 sm:w-9 sm:h-9 border border-zinc-800 bg-zinc-900/60 hover:bg-zinc-800 hover:border-zinc-700 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 group active:scale-95 shadow-sm"
                 >
-                  <img src={social.src} alt={social.alt} className="opacity-80 group-hover:opacity-100" width={16} height={16} />
+                  {social.icon}
                 </TimelineContent>
               ))}
             </div>
