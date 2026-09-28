@@ -1,0 +1,6 @@
+{
+  "name": "Verta",
+  "description": "Max Reed's premium freelance studio and interaction design portfolio showcasing bespoke tactile systems, motion design, and digital products.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
