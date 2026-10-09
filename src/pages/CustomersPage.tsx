@@ -5,7 +5,7 @@ import { TestimonialSection, type Testimonial } from "@/components/ui/testimonia
 /* ─── Stats ─── */
 const STATS = [
   { icon: Users, value: 50, suffix: "+", label: "Happy Clients" },
-  { icon: Briefcase, value: 100, suffix: "+", label: "Projects Completed" },
+  { icon: Briefcase, value: 25, suffix: "+", label: "Projects Completed" },
   { icon: Clock, value: 5, suffix: "", label: "Years Experience" },
   { icon: TrendingUp, value: 98, suffix: "%", label: "Client Satisfaction" },
 ];
@@ -18,8 +18,6 @@ const testimonialsData: Testimonial[] = [
       "Sahil delivered exceptional UI/UX design for our mobile and web app. His attention to detail and understanding of user behavior helped us increase user engagement by 40%.",
     name: "Siva Royal Gangala",
     role: "Full Stack Developer · Dhruthzuci Tech Solutions",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=128&q=80",
     avatarFallback: "SG",
   },
   {
@@ -35,8 +33,6 @@ const testimonialsData: Testimonial[] = [
       "Sahil's branding work exceeded our expectations. He captured our vision perfectly and created a brand identity that truly represents our company.",
     name: "Patan Enaz Khan",
     role: "Founder, CreativeHub · Bueaty",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=128&q=80",
     avatarFallback: "PK",
   },
   {
@@ -45,8 +41,6 @@ const testimonialsData: Testimonial[] = [
       "The portfolio design was flawless. Sahil understood the complexity of Style UI/UX and delivered a solution that our users love. The service was truly grateful.",
     name: "Sushree Swetanjali Sahu",
     role: "Cloud Engineer · Dhruthzuci Tech Solutions",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=128&q=80",
     avatarFallback: "SS",
   },
   {
@@ -62,8 +56,6 @@ const testimonialsData: Testimonial[] = [
       "Sahil's work on our healthcare platform was outstanding. He balanced functionality with empathy, creating a design that patients and doctors both appreciate.",
     name: "Prathik P",
     role: "Application Developer · Dhruthzuci Tech Solutions",
-    avatarSrc:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=128&q=80",
     avatarFallback: "PP",
   },
 ];

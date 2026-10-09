@@ -68,11 +68,17 @@ const QUICK_STATS = [
 const WORK_EXPERIENCE: ExperienceItem[] = [
   {
     period: "2025 – present",
-    role: "Freelance UI/UX Designer",
-    company: "UK-Based Company",
+    role: "Freelance UI/UX Designer & Startup Advisor",
+    company: "UK Startups & Clients",
     location: "Sheffield / Remote",
-    description: "Providing premium UI/UX design services, creating intuitive digital experiences and user-centered design solutions.",
-    highlights: ["Remote Collaboration", "UK Client Projects", "Cross-cultural Design"]
+    description: "Providing premium UI/UX design services and serving as a design advisor for UK-based startup founders. Helping entrepreneurs shape user-centered product strategies, intuitive digital experiences, and scalable design systems.",
+    highlights: [
+      "Advisor to UK Startup Founders",
+      "Startup UX Strategy",
+      "UK Client Projects",
+      "Remote Collaboration",
+      "Cross-cultural Design"
+    ]
   },
   {
     period: "2024 – 2025",
@@ -84,11 +90,16 @@ const WORK_EXPERIENCE: ExperienceItem[] = [
   },
   {
     period: "2023 – 2024",
-    role: "Freelance UI/UX Designer",
-    company: "Bangalore-Based Company",
+    role: "Freelance UI/UX Designer & Web Developer",
+    company: "Real Estate Developers (Confidential / NDA)",
     location: "Bangalore, India",
-    description: "Designed core user interfaces for web and mobile applications across various industries, specializing in complex fintech and healthcare solutions.",
-    highlights: ["Delivered 30+ projects", "Won Design Excellence Award", "Increased client satisfaction by 35%"]
+    description: "Designed, developed, and launched the official website live for a premier Bangalore-based estate builder. Due to a Non-Disclosure Agreement (NDA), company identity remains confidential. Delivered end-to-end design, digital property showcase, and production deployment.",
+    highlights: [
+      "Built & Launched Live Website",
+      "Real Estate Web Architecture",
+      "End-to-End Design & Dev",
+      "Protected by NDA"
+    ]
   },
   {
     period: "2022 – 2023",
@@ -292,7 +303,7 @@ export default function AboutPage() {
                 My design journey began with a fascination for how digital products can make people's lives easier and more enjoyable. Over the years, I have worked with diverse clients ranging from innovative startups to established enterprises across India and the UK, helping them craft digital experiences that resonate with their users.
               </p>
               <p>
-                Currently, I'm balancing my academic pursuits with freelance design work for UK-based companies, combining user research, creative thinking, and technical expertise to deliver designs that are both beautiful and functional. When I'm not designing or studying, you can find me exploring new design trends, writing about UX principles, or working on passion projects that push the boundaries of conventional design.
+                Currently, I'm balancing my academic pursuits with advising UK-based startup founders and delivering high-impact freelance digital solutions. Notably, I designed and successfully launched the official live website for a premier Bangalore estate builder (protected by NDA), combining user research, strategic UX thinking, and production deployment. When I'm not designing or studying, you can find me exploring new design trends, writing about UX principles, or working on passion projects that push the boundaries of conventional design.
               </p>
             </div>
           </div>

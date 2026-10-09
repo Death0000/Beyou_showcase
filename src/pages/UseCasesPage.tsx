@@ -40,9 +40,9 @@ const CASE_STUDIES: CaseStudy[] = [
   },
   {
     id: "freelance-mobile",
-    company: "Freelance — Mobile & Web",
-    industry: "Cross-Industry Design",
-    heroText: "Designing mobile and web experiences for startups and small businesses across multiple industries.",
+    company: "Freelance — Startups & Real Estate",
+    industry: "Advisory & Web Architecture",
+    heroText: "Designing and launching live digital platforms for UK startup founders and real estate builders.",
     stats: [
       { label: "Clients Served", value: "30+" },
       { label: "Client Satisfaction", value: "100%" },
@@ -51,10 +51,10 @@ const CASE_STUDIES: CaseStudy[] = [
     process: {
       research: "Started every project with stakeholder interviews and competitive analysis to understand the business context and user needs.",
       design: "Delivered end-to-end design solutions from wireframes to high-fidelity mockups, adapting my process to each client's timeline and budget.",
-      prototype: "Created clickable prototypes to validate design decisions early, reducing rework during the development phase.",
-      outcome: "Built a reputation for reliable, high-quality design work — 100% of clients reported being satisfied with the final deliverables."
+      prototype: "Created interactive prototypes and responsive code architectures to validate user flows prior to production deployment.",
+      outcome: "Built a reputation for reliable delivery — including designing and taking live the official website for a Bangalore estate builder (NDA) and advising UK startup founders."
     },
-    narrative: "As a freelance designer in Bangalore and later Sheffield, I worked with diverse clients across healthcare, fitness, e-commerce, and education."
+    narrative: "As a freelance designer and advisor in Bangalore and Sheffield, I collaborate with UK startup founders and built and launched the live website for a premier Bangalore real estate builder (confidential under NDA)."
   },
   {
     id: "branding",
